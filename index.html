@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>W3.CSS Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (Sits on top) -->
+<div class="w3-top w3-bar w3-light-grey w3-wide w3-padding w3-card">
+<a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
+<!-- Float links to the right. Hide them on small screens -->
+<div class="w3-right w3-hide-small">
+<a href="#projects" class="w3-bar-item w3-button">Projects</a>
+<a href="#about" class="w3-bar-item w3-button">About</a>
+<a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+
+<!-- Page Start -->
+<div id="home" class="w3-content" style="max-width:1564px">
+
+<!-- Image -->
+<div class="w3-display-container w3-content" style="max-width:1500px;">
+<img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="100%">
+<div class="w3-display-middle w3-margin-top w3-center">
+<h1 class="w3-xxlarge w3-text-white w3-wide">
+  <span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span>
+  <span class="w3-hide-small w3-text-light-grey">Architects</span>
+</h1>
+</div>
+</div>
+
+<!-- Projects -->
+<div id="projects" class="w3-container w3-light-grey w3-padding-32">
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"> Our Projects</h2>
+</div>
+
+<div class="w3-row-padding">
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="images/Brewery-Bricks-TX2.jpg" style="width:100%">
+    <img class="mySlides" src="images/jukka-heinovirta-12jqCOaBpJw-unsplash.jpg" style="width:100%">
+    
+    <img class="mySlides" src="images/cole-ankney-ZdJ6eIKN3G0-unsplash.jpg" style="width:100%">
+    <img class="mySlides" src="images/north-end-reno-1-1.webp" style="width:100%">
+    <img class="mySlides" src="images/renomain.png" style="width:100%">
+    <img class="mySlides" src="images/Romas-Noreikas-personal-project-for-a-summer-house-1.jpg" style="width:100%">
+    
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+<!-- About -->
+<div id="about" class="w3-container w3-light-grey w3-padding-32">
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
+<p>Our Company was founded in 1986 By Jeff Buckley. He wanted to build a better America one building at a time. Ever since then he has been working hard to make his dream a reality.
+</div>
+
+<div class="w3-row-padding w3-grayscale">
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<img src="images/vince-fleming-_THUISs23CI-unsplash.jpg" alt="John" style="width:99%">
+<h3>Jeff Buckley</h3>
+<p class="w3-opacity">CEO & Founder</p>
+<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<img src="images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="Jane" style="width:100%">
+<h3>Abby Phillips</h3>
+<p class="w3-opacity">Architect</p>
+<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<img src="images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="Mike" style="width:100%">
+<h3>Mike Federman</h3>
+<p class="w3-opacity">Architect</p>
+<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<img src="images/huston-wilson-WyDr1KFS23Y-unsplash.jpg" alt="Dan" style="width:100%">
+<h3>Patrick Stewart  </h3>
+<p class="w3-opacity">Architect</p>
+<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+
+</div>
+
+</body>
+</html>
